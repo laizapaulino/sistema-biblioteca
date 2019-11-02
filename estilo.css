@@ -1,9 +1,11 @@
-html, body {height:100%;}
-   .geral {
-    min-height:100%;
+html, body {
+  margin: 0;
+  padding: 0;
+  }   
+  .geral {
+    min-width: 420px;
     position:relative;
-    width:800px;
-    }
+  }
     .cor-padrao{
       background-color: rgb(250,128,114);
     }
@@ -11,8 +13,4 @@ html, body {height:100%;}
 
     button.cor-padrao{
       background-color: rgba(250,128,114,0.5);
-    }
-    footer{
-      background-color: rgb(250,128,114);
-      text-align: center;
     }

@@ -1,3 +1,5 @@
+CREATE DATABASE sistema-biblioteca;
+
 CREATE TABLE usuario(
 	cpf varchar(14) PRIMARY key,
     email varchar(50),
@@ -9,3 +11,25 @@ CREATE TABLE usuario(
     endereco_cidade varchar(20),
     endereco_estado varchar(2)
 );
+
+CREATE TABLE publicacao(
+	isbn integer PRIMARY KEY,
+    nome varchar(40),
+    ano integer,
+    autor_1 varchar(40),
+    autor_2 varchar(40),
+    autor_3 varchar(40),
+    editora varchar(25)
+    
+);
+
+CREATE TABLE exemplar(
+	isbn integer,
+    codigo_id integer primary key,
+    status boolean,
+    FOREIGN KEY (isbn) REFERENCES publicacao(isbn)
+
+    
+);
+
+

@@ -5,7 +5,7 @@
     else{
       if($_SESSION["tipo"]=='leitor')
         header('Location: ../public/pagina_inicial.php');
-    }
+    } 
 ?>
 
 
@@ -19,9 +19,9 @@
               <h5> O que você deseja fazer?</h5>
             </div>
             <div class="card-body">
-                <a class="btn btn-md btn-block  btn-outline-info" type="submit" href="cadastra_exemplar.php">Cadastrar exemplar</a>
-                <a class="btn btn-md btn-block  btn-outline-info" type="submit" href="consulta_exemplar.php">Consultar exemplar</a>
-                
+              <button class="btn btn-md btn-block  btn-outline-info" type="submit" onclick="window.location.href='../usuario/cadastra_usuario_leitor.php'">Cadastrar novo leitor</button>
+              <button class="btn btn-md btn-block  btn-outline-info" type="submit"  onclick="window.location.href='../usuario/consulta_usuario_leitor.php'"> VER TODOS OS LEITORES</button>
+
             </div>
           </div>
         </div>

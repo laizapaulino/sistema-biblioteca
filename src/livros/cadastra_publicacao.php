@@ -36,10 +36,10 @@
                 </div>
 
                 <div class="form-group">
-                  <input name="isbn" type="text" class="form-control" placeholder="ISBN" required>
+                  <input name="isbn" id="isbn" type="text" class="form-control" placeholder="ISBN" >
                 </div>
 
-                <button class="btn btn-lg btn-block cor-padrao" type="submit">Cadastrar</button>
+                <button class="btn btn-lg btn-block cor-padrao" type="submit" onclick="getElementById('isbn').value = parseInt(Math.random() * (5000 - 1) + 1)">Cadastrar</button>
               </form>
             </div>
 

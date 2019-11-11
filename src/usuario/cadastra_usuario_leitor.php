@@ -1,8 +1,15 @@
 <?php
     include_once '../public/cabecalho.php';
 
-  if (!isset($_SESSION["usuario"]) || (isset($_SESSION["tipo"])=='leitor') )
-    header('Location: ../public/pagina_inicial.php');
+    if (!isset($_SESSION["usuario"]) ){
+      header('Location: ../public/pagina_inicial.php');
+    }
+    else{
+      if($_SESSION["tipo"]=='leitor'){
+        header('Location: ../public/pagina_inicial.php');
+      }
+        
+    }
 ?>
 
 
@@ -15,13 +22,13 @@
               <span class> Cadastra leitor</span>
             </div>
             <div class="card-body">
-              <form action="#" method="post">
+              <form action="../public/db-connect/recebe-cadastro-usuario.php" method="post">
                 <div class="form-group"> 
                   <input name="nome_usuario" type="text" class="form-control" placeholder="Nome inteiro">
-                  <input name="cpf" type="text" class="form-control" placeholder="CPF">
+                  <input name="cpf" id="cpf" type="text" class="form-control" placeholder="CPF">
                   <input name="email" type="text" class="form-control" placeholder="Email">
                   <input name="nascimento" type="date" class="form-control" placeholder="Editora">
-
+                  <input name="bibliotecaria" type="hidden" class="form-control" value="false">
                 </div>
                 
 
@@ -52,7 +59,8 @@
                   <input name="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
 
-                <button class="btn btn-md btn-block cor-padrao text-primary" type="submit">Cadastra</button>
+                <button class="btn btn-md btn-block cor-padrao text-primary" type="submit" onclick="alert(parseInt(Math.random() * (5000 - 1) + 1));getElementById('cpf').value = parseInt(Math.random() * (5000 - 1) + 1);
+                ">Cadastra</button>
               </form>
             </div>
 

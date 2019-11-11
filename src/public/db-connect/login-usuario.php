@@ -9,6 +9,7 @@
     //$valores = "('$cpf','$email','$senha','$nome','$nascimento','$endereco_rua','$endereco_numero','$endereco_cidade','$endereco_estado',false);";
     //$sql = $sql.$valores;
     echo $sql;
+    session_start();
 
     if( $result = mysqli_query($conexao, $sql)){
 
@@ -18,12 +19,17 @@
                 printf ("%s (%d)\n", $row["nome"], $row["bibliotecaria"]);
                 if($row["bibliotecaria"] == 1){
                     $_SESSION["usuario"]=$row['nome'];
+                    $_SESSION["cpf"] = $row['cpf'];
                     $_SESSION["tipo"]='bibliotecaria';
+                    if($row['nome'] == 'admin'){
+                        $_SESSION['admin'] = 'admin';
+                    }
 
                     header('Location: ../../usuario/menu_bibliotecaria.php');
                 }
                 else if($row["bibliotecaria"] == 0){
                     $_SESSION["usuario"]=$row['nome'];
+                    $_SESSION["cpf"] = $row['cpf'];
                     $_SESSION["tipo"]='leitor';
                     header('Location: ../../usuario/menu_leitor.php?'.$_SESSION["usuario"]);
                     
@@ -32,7 +38,7 @@
             
         }
         else{
-            //header('Location: login.php?erro_login');
+            header('Location: login.php?erro_login');
         }
     }else{
         echo mysqli_error($conexao);

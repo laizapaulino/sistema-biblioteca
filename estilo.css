@@ -6,11 +6,14 @@ html, body {
     min-width: 420px;
     position:relative;
   }
-    .cor-padrao{
-      background-color: rgb(250,128,114);
-    }
-    
+  .cor-padrao{
+    background-color: rgb(250,128,114);
+  }
+  
 
-    button.cor-padrao{
-      background-color: rgba(250,128,114,0.5);
-    }
+  button.cor-padrao{
+    background-color: rgba(250,128,114,0.5);
+  }
+  label{
+    margin: 2px;
+  }

@@ -2,17 +2,16 @@
     include_once 'conexao.php';
 
     
-    $sql = "SELECT * FROM publicacao";
-    $publi = array();
+    $sql = "SELECT * FROM exemplar";
+    $exemplar = array();
     if( $result = mysqli_query($conexao, $sql)){
 
         if ( mysqli_num_rows($result) > 0){
             while ($row = $result->fetch_assoc()) {//Verifica se é bibliotecaria
-                array_push($publi, array('nome'=>$row["nome"], 'isbn'=>$row["isbn"],
-                'autor_1'=>$row["autor_1"],'autor_2'=>$row["autor_2"],'autor_3'=>$row["autor_3"], 'editora'=>$row['editora']));
+                array_push($exemplar, array('isbn'=>$row["isbn"],
+                'codigo'=>$row['codigo_id']));
             }
         }
-
         
         else{
             //header('Location: login.php?erro_login');

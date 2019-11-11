@@ -1,5 +1,15 @@
 <?php
+  
     include_once '../public/cabecalho.php';
+    if (!isset($_SESSION["usuario"]) ){
+      header('Location: ../public/pagina_inicial.php');
+    }
+    else{
+      if($_SESSION["tipo"]=='leitor'){
+        header('Location: ../public/pagina_inicial.php');
+      }
+        
+    }
 ?>
 
 
@@ -12,7 +22,6 @@
                 <!--Verificar se é bibliotecaria ou leitor-->
               <span class> Cadastra bibliotecaria</span>
             </div>
-            db-connect
             <div class="card-body">
               <form action="../public/db-connect/recebe-cadastro-usuario.php" method="post">
                 <div class="form-group"> 
@@ -20,6 +29,7 @@
                   <input name="cpf" type="text" class="form-control" placeholder="CPF">
                   <input name="email" type="text" class="form-control" placeholder="Email">
                   <input name="nascimento" type="date" class="form-control" placeholder="Editora">
+                  <input name="bibliotecaria" type="hidden" class="form-control" value="true">
 
                 </div>
                 

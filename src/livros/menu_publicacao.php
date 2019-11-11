@@ -20,7 +20,7 @@
             </div>
             <div class="card-body">
                 <a class="btn btn-md btn-block  btn-outline-info" type="submit" href="cadastra_publicacao.php">Cadastrar publicação</a>
-                <a class="btn btn-md btn-block  btn-outline-info" type="submit">Consultar publicação</a>
+                <a class="btn btn-md btn-block  btn-outline-info" type="submit" href="consulta_publicacao.php" >Consultar publicação</a>
                 
             </div>
           </div>

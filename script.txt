@@ -27,7 +27,7 @@ CREATE TABLE exemplar(
 	isbn integer,
     codigo_id integer primary key,
     status boolean,
-    FOREIGN KEY (isbn) REFERENCES publicacao(isbn)
+    FOREIGN KEY (isbn) REFERENCES publicacao(isbn) ON DELETE CASCADE
 
     
 );

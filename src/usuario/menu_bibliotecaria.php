@@ -1,14 +1,15 @@
 <?php
     include_once '../public/cabecalho.php';
-    
-    if (!isset($_SESSION["usuario"]) )
-    header('Location: ../public/pagina_inicial.php');
+    if (!isset($_SESSION["usuario"]) ){
+      header('Location: ../public/pagina_inicial.php');
+    }
     else{
-      if($_SESSION["tipo"]=='leitor')
+      if($_SESSION["tipo"]=='leitor'){
         header('Location: ../public/pagina_inicial.php');
+      }
+        
     }
 ?>
-
 
 <div class="container geral">    
       <div class="row">
@@ -20,11 +21,18 @@
               <h5> Menu</h5>
             </div>
             <div class="card-body">
-                <a class="btn btn-md btn-block  btn-outline-info" type="submit" href="../livros/menu_publicacao.php">Publicação</a>
-                <a class="btn btn-md btn-block  btn-outline-info" type="submit" href="../livros/menu_exemplar.php">Exemplar</a>
-                <a class="btn btn-md btn-block  btn-outline-info" type="submit">Novo empréstimo</a>
-                <a class="btn btn-md btn-block  btn-outline-info" type="submit" href="../usuario/cadastra_usuario_leitor.php">Cadastrar novo leitor</a>
-
+                <button class="btn btn-md btn-block  btn-outline-info" type="submit" onclick="window.location.href='../livros/menu_publicacao.php'">Publicação</button>
+                <button class="btn btn-md btn-block  btn-outline-info" type="submit" onclick="window.location.href='../livros/menu_exemplar.php'">Exemplar</button>
+                <button class="btn btn-md btn-block  btn-outline-info" type="submit" onclick="window.location.href='menu_leitor2.php'">Leitor</button>
+                <button class="btn btn-md btn-block  btn-outline-info" type="submit">Novo empréstimo</button>
+                <button class="btn btn-md btn-block  btn-outline-primary" type="submit"  onclick="#">Multas</button>
+                <button class="btn btn-md btn-block  btn-outline-primary" type="submit"  onclick="#">Salas</button>
+              <?if (isset($_SESSION["admin"])) {?>
+              <hr>
+                <button class="btn btn-md btn-block  btn-outline-success" type="submit" onclick="window.location.href='../usuario/cadastra_usuario.php'">Cadastrar nova bibliotecaria</button>
+                <button class="btn btn-md btn-block  btn-outline-success" type="submit"  onclick="window.location.href='../usuario/consulta_usuario.php'"> VER TODOS OS USUARIOS</button>
+                
+              <?}?>
             </div>
           </div>
         </div>

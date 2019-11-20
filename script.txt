@@ -9,7 +9,8 @@ CREATE TABLE usuario(
     endereco_rua varchar(50),
     endereco_numero integer,
     endereco_cidade varchar(20),
-    endereco_estado varchar(2)
+    endereco_estado varchar(2),
+    bibliotecaria int
 );
 
 CREATE TABLE publicacao(
@@ -29,6 +30,18 @@ CREATE TABLE exemplar(
     status boolean,
     FOREIGN KEY (isbn) REFERENCES publicacao(isbn) ON DELETE CASCADE
 
+    
+);
+
+CREATE TABLE trabalho(
+    codigo integer primary key,
+    nome varchar(40),
+    nome_instituicao varchar(40),
+    ano integer,
+    autor_1 varchar(40),
+    autor_2 varchar(40),
+    autor_3 varchar(40),
+    status boolean
     
 );
 

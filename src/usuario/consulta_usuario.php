@@ -20,7 +20,7 @@
               <form action="#" method="post">
                
 
-                <?include_once "../public/db-connect/retorna-usuarios-leitor.php"?>
+                <?include "../public/db-connect/usuario/retorna-usuarios-leitor.php"?>
                 <ul class ="list-group list-group-flush">
                   <?for ($i = 0; $i < sizeof($usuarios); $i++){?>
                     <li class="list-group-item">

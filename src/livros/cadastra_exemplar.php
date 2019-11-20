@@ -20,7 +20,7 @@
             </div>
 
             <div class="card-body">
-              <form action="../public/db-connect/recebe-cadastro-exemplar.php" method="post">
+              <form action="../public/db-connect/livro/recebe-cadastro-exemplar.php" method="post">
                 <div class="form-group">
 
                     <select class="form-control" name="isbn" required >
@@ -34,12 +34,12 @@
                 </div>
 
                 <div class="form-group">
-                  <input name="id_exemplar" id="exemplar" type="text" class="form-control" placeholder="Código Exemplar">
+                  <input name="id_exemplar" id="id_exemplar" type="text" class="form-control" placeholder="Código Exemplar">
                 </div>
 
                 
 
-                <button class="btn btn-lg btn-block cor-padrao" type="submit" onclick="alert(getElementById('exemplar').value = parseInt(Math.random() * (5000 - 1) + 1)">Cadastrar</button>
+                <button class="btn btn-lg btn-block cor-padrao" type="submit" onclick="getElementById('id_exemplar').value = parseInt(Math.random() * (5000 - 1) + 1)">Cadastrar</button>
               </form>
             </div>
 

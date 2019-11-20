@@ -1,0 +1,478 @@
+{
+  "id": "cac1a27d-b995-4e4f-a524-64296b3cb114",
+  "version": "2.0",
+  "name": "Teste-release-02",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "3ca85097-3ee0-4225-a55e-7649173ce80c",
+    "name": "crud-trabalho",
+    "commands": [{
+      "id": "d1f930a0-8404-487c-a407-9a45a4cc7167",
+      "comment": "",
+      "command": "open",
+      "target": "/Sistema_Biblioteca/src/public/pagina_inicial.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eda914e2-d88b-48bb-87f2-524e0a4d0384",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "667x701",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d86bc62a-5fe2-48e8-b3b9-28f976bf0eed",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../usuario/login.php')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1784c785-8526-4e7a-9b05-4e103a0b7081",
+      "comment": "",
+      "command": "click",
+      "target": "name=cpf",
+      "targets": [
+        ["name=cpf", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cpf']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45d82491-0a45-4da3-9e4f-420560127e1e",
+      "comment": "",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [
+        ["name=cpf", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cpf']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "5f9c9e0e-aab9-4fc4-ac17-02c3cd8deb8d",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "asas"
+    }, {
+      "id": "f2289872-a1f9-4c4f-b228-4cc20ad5fa30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-md",
+      "targets": [
+        ["css=.btn-md", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "354148f1-68b9-4fc6-9f67-065be48f5ddf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Trabalho cientifico')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08b0fbfa-7dbc-4d4a-b7ff-5344fd115a26",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar trabalho cientifico",
+      "targets": [
+        ["linkText=Cadastrar trabalho cientifico", "linkText"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastrar trabalho cientifico')]", "xpath:link"],
+        ["xpath=//a[@type='submit']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, 'cadastra_trabalho.php')]", "xpath:href"],
+        ["xpath=//div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastrar trabalho cientifico')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "172402f2-d501-4639-9b8b-51b0b400ccd0",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome_trabalho",
+      "targets": [
+        ["name=nome_trabalho", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='nome_trabalho']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c359addb-2b24-4c03-a3cb-48f09ad9bd17",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome_trabalho",
+      "targets": [
+        ["name=nome_trabalho", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='nome_trabalho']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Estudo sobre moleculas"
+    }, {
+      "id": "374d1a0e-1247-4cbc-ab5f-8d518c402ce5",
+      "comment": "",
+      "command": "type",
+      "target": "name=ano",
+      "targets": [
+        ["name=ano", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ano']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2018"
+    }, {
+      "id": "8066d3b4-d024-40af-bf7d-9222f8df02cc",
+      "comment": "",
+      "command": "type",
+      "target": "name=autor_1",
+      "targets": [
+        ["name=autor_1", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='autor_1']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Laiza Paulino"
+    }, {
+      "id": "93f99b50-1da9-4e2e-be57-3505b269d2bd",
+      "comment": "",
+      "command": "click",
+      "target": "name=autor_2",
+      "targets": [
+        ["name=autor_2", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='autor_2']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b964e7bb-fed7-4c06-b60a-32c883c41390",
+      "comment": "",
+      "command": "type",
+      "target": "name=autor_2",
+      "targets": [
+        ["name=autor_2", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='autor_2']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Pedro Paulino"
+    }, {
+      "id": "fd1900b1-6285-462f-a8f0-8b9ec7aca5f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=codigo",
+      "targets": [
+        ["id=codigo", "id"],
+        ["name=codigo", "name"],
+        ["css=#codigo", "css:finder"],
+        ["xpath=//input[@id='codigo']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "844fffaa-27a1-4322-820c-c0eae4444a91",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg",
+      "targets": [
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11f26ccf-d155-4c8c-9fe0-2b5105fff7a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Consultar trabalhos cientificos",
+      "targets": [
+        ["linkText=Consultar trabalhos cientificos", "linkText"],
+        ["css=.btn-md:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Consultar trabalhos cientificos')]", "xpath:link"],
+        ["xpath=(//a[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, 'consulta_trabalho.php')]", "xpath:href"],
+        ["xpath=//div/div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Consultar trabalhos cientificos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "faeb70f7-8490-445d-9535-afa13bfd1149",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mais detalhes",
+      "targets": [
+        ["linkText=Mais detalhes", "linkText"],
+        ["css=.list-group-item:nth-child(1) .text-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Mais detalhes')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'detalhes_trabalho.php?2722')]", "xpath:href"],
+        ["xpath=//div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mais detalhes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8396a9c-a45f-483f-8651-ed44bb5c9318",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "linkText=Mais detalhes",
+      "targets": [
+        ["linkText=Mais detalhes", "linkText"],
+        ["css=.list-group-item:nth-child(1) .text-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Mais detalhes')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'detalhes_trabalho.php?2722')]", "xpath:href"],
+        ["xpath=//div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mais detalhes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3feba67f-883d-4261-acdc-425db6dec16c",
+      "comment": "",
+      "command": "click",
+      "target": "name=autor_1",
+      "targets": [
+        ["name=autor_1", "name"],
+        ["css=.form-control:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='autor_1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d5c190f-c392-4fc3-b3ff-77903ad72725",
+      "comment": "",
+      "command": "click",
+      "target": "name=autor_1",
+      "targets": [
+        ["name=autor_1", "name"],
+        ["css=.form-control:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='autor_1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8179e307-3adf-48a9-996e-a21aa6e7b46a",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "name=autor_1",
+      "targets": [
+        ["name=autor_1", "name"],
+        ["css=.form-control:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='autor_1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2164b32d-bec9-4033-be8e-f86244e4bc21",
+      "comment": "",
+      "command": "type",
+      "target": "name=autor_1",
+      "targets": [
+        ["name=autor_1", "name"],
+        ["css=.form-control:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='autor_1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Joaquim Rios"
+    }, {
+      "id": "bb86304d-dcac-43ec-b926-81487820bdda",
+      "comment": "",
+      "command": "click",
+      "target": "name=autor_2",
+      "targets": [
+        ["name=autor_2", "name"],
+        ["css=.form-control:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='autor_2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee6848fa-2f41-418d-a23e-dc2bef1296af",
+      "comment": "",
+      "command": "click",
+      "target": "name=autor_2",
+      "targets": [
+        ["name=autor_2", "name"],
+        ["css=.form-control:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='autor_2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05ea72c4-2ef3-4ff8-868c-ac0d43fc76e1",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "name=autor_2",
+      "targets": [
+        ["name=autor_2", "name"],
+        ["css=.form-control:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='autor_2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59230f3c-56fd-4aad-8bc9-3ca50d1e1ecb",
+      "comment": "",
+      "command": "type",
+      "target": "name=autor_2",
+      "targets": [
+        ["name=autor_2", "name"],
+        ["css=.form-control:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='autor_2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Jorge Paulino"
+    }, {
+      "id": "947b98ff-1ba7-4f56-917a-73b92ae6d870",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-control:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4204c77b-9937-4717-a01e-cecfe3826199",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.form-control:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Estudo sobre cimento"
+    }, {
+      "id": "5315f2c2-9ace-4101-a22d-98b98d6198fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-md",
+      "targets": [
+        ["css=.btn-md", "css:finder"],
+        ["xpath=//input[@value='Atualizar']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7781e0ca-552c-4194-ad4c-109089e5fcc1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Menu",
+      "targets": [
+        ["linkText=Menu", "linkText"],
+        ["css=.col-md-4 > .text-white:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Menu')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../usuario/menu_bibliotecaria.php')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6a84af5-0acd-4484-82fd-21e62fa4282a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Trabalho cientifico')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30244404-4073-4806-9d7a-3b24eb131675",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Consultar trabalhos cientificos",
+      "targets": [
+        ["linkText=Consultar trabalhos cientificos", "linkText"],
+        ["css=.btn-md:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Consultar trabalhos cientificos')]", "xpath:link"],
+        ["xpath=(//a[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, 'consulta_trabalho.php')]", "xpath:href"],
+        ["xpath=//div/div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Consultar trabalhos cientificos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d50d6441-cd8c-4b4e-ae81-79cf7357c6e9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Excluir",
+      "targets": [
+        ["linkText=Excluir", "linkText"],
+        ["css=.list-group-item:nth-child(1) .text-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Excluir')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../public/db-connect/trabalho/excluir-trabalho.php?2722')]", "xpath:href"],
+        ["xpath=//div/div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Excluir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41197b9e-764e-4229-b0e5-7f6daf366329",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Excluir",
+      "targets": [
+        ["linkText=Excluir", "linkText"],
+        ["css=.text-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Excluir')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../public/db-connect/trabalho/excluir-trabalho.php?3275')]", "xpath:href"],
+        ["xpath=//div/div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Excluir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e20ed148-a625-41c7-8a3f-30df533fc464",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../public/logout.php')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "51457ea5-98c1-4f44-a2b9-a4f7bd43cf3c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3ca85097-3ee0-4225-a55e-7649173ce80c"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

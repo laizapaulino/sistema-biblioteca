@@ -34,7 +34,7 @@
 
             <div class="card-body">
 
-              <?include_once "../public/db-connect/retorna-usuarios-leitor.php";
+              <?include_once "../public/db-connect/usuario/retorna-usuarios-leitor.php";
                   foreach($usuarios as $x){
                       if($x['cpf']== $url[1]){
                           $usuario = $x;
@@ -48,7 +48,7 @@
         
                     <li class="list-group-item">
                     <div class="row">
-                      <form action="../public/db-connect/atualiza-usuario.php?<?=$usuario['cpf']?>" method="post">
+                      <form action="../public/db-connect/usuario/atualiza-usuario.php?<?=$usuario['cpf']?>" method="post">
                           <div class="col-md-9">
                           
                               Nome: <?=$usuario['nome']?>
@@ -73,7 +73,7 @@
                       </form>
                         
                       <div class="col-md-3">
-                          <a href="../public/db-connect/excluir-usuario.php?<?=$usuario['cpf']?>?consulta_usuario_leitor" class="text-danger" onclick="return confirm('Excluir mesmo?')">
+                          <a href="../public/db-connect/usuario/excluir-usuario.php?<?=$usuario['cpf']?>?consulta_usuario_leitor" class="text-danger" onclick="return confirm('Excluir mesmo?')">
                             Excluir
                           </a>
                       </div>

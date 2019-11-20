@@ -22,7 +22,7 @@
               <span class> Cadastra leitor</span>
             </div>
             <div class="card-body">
-              <form action="../public/db-connect/recebe-cadastro-usuario.php" method="post">
+              <form action="../public/db-connect/usuario/recebe-cadastro-usuario.php" method="post">
                 <div class="form-group"> 
                   <input name="nome_usuario" type="text" class="form-control" placeholder="Nome inteiro">
                   <input name="cpf" id="cpf" type="text" class="form-control" placeholder="CPF">
@@ -59,7 +59,7 @@
                   <input name="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
 
-                <button class="btn btn-md btn-block cor-padrao text-primary" type="submit" onclick="alert(parseInt(Math.random() * (5000 - 1) + 1));getElementById('cpf').value = parseInt(Math.random() * (5000 - 1) + 1);
+                <button class="btn btn-md btn-block cor-padrao text-primary" type="submit" onclick="getElementById('cpf').value = parseInt(Math.random() * (5000 - 1) + 1);
                 ">Cadastra</button>
               </form>
             </div>

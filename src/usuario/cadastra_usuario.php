@@ -23,7 +23,7 @@
               <span class> Cadastra bibliotecaria</span>
             </div>
             <div class="card-body">
-              <form action="../public/db-connect/recebe-cadastro-usuario.php" method="post">
+              <form action="../public/db-connect//usuario/recebe-cadastro-usuario.php" method="post">
                 <div class="form-group"> 
                   <input name="nome_usuario" type="text" class="form-control" placeholder="Nome inteiro">
                   <input name="cpf" type="text" class="form-control" placeholder="CPF">

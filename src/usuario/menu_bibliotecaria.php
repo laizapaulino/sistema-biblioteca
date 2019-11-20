@@ -21,12 +21,13 @@
               <h5> Menu</h5>
             </div>
             <div class="card-body">
+                <button class="btn btn-md btn-block  btn-outline-info" type="submit" onclick="window.location.href='../trabalho/menu_trabalho.php'">Trabalho cientifico</button>
                 <button class="btn btn-md btn-block  btn-outline-info" type="submit" onclick="window.location.href='../livros/menu_publicacao.php'">Publicação</button>
                 <button class="btn btn-md btn-block  btn-outline-info" type="submit" onclick="window.location.href='../livros/menu_exemplar.php'">Exemplar</button>
                 <button class="btn btn-md btn-block  btn-outline-info" type="submit" onclick="window.location.href='menu_leitor2.php'">Leitor</button>
-                <button class="btn btn-md btn-block  btn-outline-info" type="submit">Novo empréstimo</button>
+                <button class="btn btn-md btn-block  btn-outline-info" type="submit" onclick="window.location.href='../emprestimo/menu_emprestimo.php'">Empréstimo</button>
                 <button class="btn btn-md btn-block  btn-outline-primary" type="submit"  onclick="#">Multas</button>
-                <button class="btn btn-md btn-block  btn-outline-primary" type="submit"  onclick="#">Salas</button>
+                <button class="btn btn-md btn-block  btn-outline-primary" type="submit"  onclick="#">Computadores</button>
               <?if (isset($_SESSION["admin"])) {?>
               <hr>
                 <button class="btn btn-md btn-block  btn-outline-success" type="submit" onclick="window.location.href='../usuario/cadastra_usuario.php'">Cadastrar nova bibliotecaria</button>

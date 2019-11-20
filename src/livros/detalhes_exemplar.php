@@ -85,7 +85,7 @@
                       </div>
                         
                       <div class="col-md-4">
-                          <a href="../public/db-connect/livro/excluir-publicacao.php?<?=$url[1]?>" class="text-danger" onclick="return confirm('Excluir mesmo?')">
+                          <a href="../public/db-connect/livro/excluir-publicacao.php?<?=$url[1]?>" class="text-danger" >
                             Excluir exemplar
                           </a>
                       </div>

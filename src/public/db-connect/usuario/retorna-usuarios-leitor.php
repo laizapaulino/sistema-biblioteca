@@ -1,5 +1,6 @@
 <?php
-    include_once 'conexao.php';
+    //include_once '../../../public/db-connect/usuario/retorna-usuarios-leitor.php';
+    include_once '../public/db-connect/conexao.php';
 
     
     $sql = "SELECT * FROM usuario";

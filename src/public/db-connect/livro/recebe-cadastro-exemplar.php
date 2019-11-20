@@ -9,7 +9,7 @@
         echo $_SESSION["tipo"];
     }
     
-    include_once 'conexao.php';
+    include_once '../conexao.php';
 
     $codigo = $_POST['id_exemplar'];
     $isbn = $_POST['isbn'];
@@ -24,11 +24,13 @@
     //$result = mysqli_prepare($conexao, $sql);
     if (mysqli_query($conexao, $sql)) {
         echo 'Inserido com sucesso<br>';
+        header('Location: ../../../livros/menu_exemplar.php?ok');
     }else{
         echo mysqli_error($conexao).'<br>';
+        header('Location: ../../../livros/menu_exemplar.php?erro');
     }
 
-    header('Location: ../../livros/menu_exemplar.php');
+    
 
 
 /*CREATE TABLE publicacao(

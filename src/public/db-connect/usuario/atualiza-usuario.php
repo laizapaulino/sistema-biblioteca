@@ -1,5 +1,5 @@
 <?php
-    include_once 'conexao.php';
+    include_once '../conexao.php';
 
     $url = explode('?',$_SERVER["REQUEST_URI"]);
     $endereco_rua = $_POST['endereco_rua'];
@@ -17,7 +17,7 @@
 
     }else{
         echo mysqli_error($conexao).'<br>';
-        header('Location: ../../usuario/menu_bibliotecaria.php?erro');
+        header('Location: ../../../usuario/menu_bibliotecaria.php?erro');
     }
     
     //echo '<br><hr>'.$sql;

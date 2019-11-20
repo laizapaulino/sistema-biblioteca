@@ -34,7 +34,7 @@
                             <a href="detalhes_exemplar.php?<?=$exemplar[$i]['isbn']?>?<?=$exemplar[$i]['codigo']?>" class="text-success">
                             Mais detalhes
                             </a><br>
-                            <a href="#" class="text-danger">
+                            <a href="../public/db-connect/livro/excluir-exemplar.php?<?=$exemplar[$i]['codigo']?>" class="text-danger">
                             Excluir
                             </a>
                             </div>

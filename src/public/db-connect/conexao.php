@@ -7,5 +7,7 @@
     $banco = 'sistema-biblioteca';
     $usuario = 'admin';
     $senha = 'p4ul1n0123';
-    $conexao = mysqli_connect($servidor, $usuario, $senha, $banco) or die('Erro ao conectar ao banco de dados');
+    $conexao = mysqli_connect($servidor, $usuario, $senha, $banco) ;
+    echo mysqli_error($conexao);
+    echo "deu";
 ?>

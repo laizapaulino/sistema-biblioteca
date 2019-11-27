@@ -38,7 +38,7 @@
             
         }
         else{
-            header('Location: login.php?erro_login');
+            header('Location: ../../usuario/login.php?error');
         }
     }else{
         echo mysqli_error($conexao);

@@ -6,7 +6,7 @@
       header('Location: ../public/pagina_inicial.php');
     }
     else{
-      if($_SESSION["tipo"]=='leitor' && $_SESSION['cpf']!=$url[1]){
+      if(!$_SESSION["tipo"]=='leitor' && $_SESSION['cpf']!=$url[1]){
         header('Location: ../public/pagina_inicial.php');
       }
         
@@ -47,36 +47,38 @@
                   <?if($usuario['cpf']==$url[1]){?>
         
                     <li class="list-group-item">
-                    <div class="row">
                       <form action="../public/db-connect/usuario/atualiza-usuario.php?<?=$usuario['cpf']?>" method="post">
+                      <div class="row">
+
                           <div class="col-md-9">
                           
                               Nome: <?=$usuario['nome']?>
                               </br>
                               CPF: <?=$usuario['cpf']?>
                               <br>
-                              Email: <input type="text" value="<?=$usuario['email']?>" name="email" >
+                              Email: <input type="text" class='form-control' value="<?=$usuario['email']?>" name="email" >
                               <br>
                               <hr>
-                              Rua: <input type="text" value="<?=$usuario['rua']?>" name="endereco_rua" >
+                              Rua: <input type="text" class='form-control' value="<?=$usuario['rua']?>" name="endereco_rua" >
                               <br> 
-                              Cidade: <input type="text" value="<?=$usuario['cidade']?>" name="endereco_cidade">
+                              Cidade: <input type="text" class='form-control' value="<?=$usuario['cidade']?>" name="endereco_cidade">
                               <br>
-                              Estado: <input type="text" value="<?=$usuario['estado']?>" name="endereco_estado">
+                              Estado: <input type="text" class='form-control' value="<?=$usuario['estado']?>" name="endereco_estado">
                               <br>
-                              Nº: <input type="text" value="<?=$usuario['numero']?>" name="endereco_numero">
+                              Nº: <input type="text" class='form-control' value="<?=$usuario['numero']?>" name="endereco_numero">
                               <br>
                               
                           </div>
                           <button class="btn btn-md btn-block cor-padrao text-primary" type="submit">Atualiza</button>
 
                       </form>
-                        
+                      <?if ($_SESSION['tipo'] == 'bibliotecaria'){?>
                       <div class="col-md-3">
                           <a href="../public/db-connect/usuario/excluir-usuario.php?<?=$usuario['cpf']?>?consulta_usuario_leitor" class="text-danger" onclick="return confirm('Excluir mesmo?')">
                             Excluir
                           </a>
                       </div>
+                      <?}?>
                     </div>
                     </li>
                   <?}?>

@@ -125,22 +125,7 @@
         <div class="card-login w-75 pt-5 col-md-8">
           <div class="card">
             <div class="card-header text-info">
-              <span class> Cadastra emprestimo</span>
-            </div>
-            <p hidden=''>Fazer login no leitor para depois entrar aqui<br>
-            1º login<br>
-            2º cadastro <br>
-            3º confirmação e novo emprestimo? (nova tela)
-            </p>
-          
-            <div class="card-body" >
-
-                <div class="form-group"> 
-                  <input name="cpf" id="cpf" type="text" class="form-control" placeholder="CPF" value="">
-                  <input name="senha"id="senha" type="password" class="form-control" placeholder="Senha">
-                </div>
-
-                <button id="valida" class="btn btn-md btn-block cor-padrao text-primary" onclick="valida()">Login</button>
+              <span class> Devolução emprestimo</span>
             </div>
 
             <div class="card-body">
@@ -156,37 +141,36 @@
                 <label class="custom-control-label" for="trabalho">Trabalho</label>
               </div>
             </div>
+
             <div class="card-body" id='livr'>
-              <form action="../public/db-connect/emprestimo/recebe-cadastro-emprestimo-livro.php" method="post">
+              <form action="../public/db-connect/emprestimo/excluir-emprestimo-livro.php?livro" method="post">
                 <div class="form-group"> 
-                  <select class="form-control" name="isbn" id="codigo_exemplar"  disabled>
+                  <select class="form-control" name="isbn" id="codigo_exemplar"  >
                     <option  id="" value="" selected disabled>Código do exemplar</option>
-                    <?for($i = 0; $i<sizeof($exemplar);$i++){?>
-                      
-                      <option  value="<?=$exemplar[$i]['codigo']?>" <?= $exemplar[$i]['status'] == 1? "disabled" :"" ?> >
-                        <?=$exemplar[$i]['codigo'].'  -  '.$exemplar[$i]['nome']?> - <?= $exemplar[$i]['status'] == 1? "EMPRESTADO" :"" ?>
-                      </option>
-                    <?}?>
+                    <?for($i = 0; $i<sizeof($emprestimo_livro);$i++){
+                       if($emprestimo_livro[$i]['status'] == 1) {?>
+                        <option  value="<?=$emprestimo_livro[$i]['codigo']?>" >
+                          <?=$emprestimo_livro[$i]['codigo'].'  -  '.$emprestimo_livro[$i]['nome']?>
+                        </option>
+                    <?}}?>
                   </select>
                 </div>
-                <button class="btn btn-lg btn-block cor-padrao" type="submit" onclick="getElementById('codigo').value = parseInt(Math.random() * (5000 - 1) + 1)">Cadastrar</button>
+                <button class="btn btn-lg btn-block cor-padrao" type="submit" >Devolver</button>
                 <input type="hidden"value='' name="cpf2" id="cpf2">
               </form>
               
             </div>
-            
             <div class="card-body" id='trab' hidden>
-              <form action="../public/db-connect/emprestimo/recebe-cadastro-emprestimo-trabalho.php" method="post">
+              <form action="../public/db-connect/emprestimo/excluir-emprestimo-trabalho.php" method="post">
                 <div class="form-group"> 
-                  <select class="form-control" name="trabalho_cod" id="codigo_trabalho" disabled >
+                  <select class="form-control" name="trabalho_cod" id="codigo_trabalho"  >
                     <option  id="" value="" selected disabled>Código do trabalho</option>
-                    <?for($i = 0; $i<sizeof($trabalho);$i++){
-                      ?>
-                      
-                      <option  value="<?=$trabalho[$i]['codigo']?>" <?= $trabalho[$i]['status'] == 1? "disabled" :"" ?>>
-                        <?=$trabalho[$i]['codigo'].'  -  '.$trabalho[$i]['nome'] ?>
-                      </option>
-                    <?}?>
+                    <?for($i = 0; $i<sizeof($emprestimo);$i++){
+                       if($emprestimo[$i]['status'] == 1) {?>
+                        <option  value="<?=$emprestimo[$i]['codigo']?>" >
+                          <?=$emprestimo[$i]['codigo'].'  -  '.$emprestimo[$i]['nome']?>
+                        </option>
+                    <?}}?>
                   </select>
                 </div>
                 <input type="hidden"value='' name="cpf2" id="cpf3">
@@ -199,21 +183,7 @@
           </div>
         </div>
     <!-------->
-    <!--Emprestimos do usuario-->
-        <div class="card-login w-75 pt-5 col-md-4">
-          <div class="card">
-              
-            <div class="card-header text-info">
-              <span class> Emprestimos do usuário</span>
-            </div>
-
-            <div class="card-body" id="emprestimo_livros">
-
-            </div>
-
-          </div>
-        </div>
-    <!----->
+    
     </div>
     </div>
   </body>

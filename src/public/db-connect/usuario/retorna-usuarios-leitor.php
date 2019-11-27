@@ -11,7 +11,7 @@
             
             while ($row = $result->fetch_assoc()) {
                 
-                array_push($usuarios, array('nome'=>$row["nome"], 'cpf'=>$row["cpf"], 'email'=>$row["email"],
+                array_push($usuarios, array('nome'=>$row["nome"], 'cpf'=>$row["cpf"], 'senha'=>$row["senha"],  'email'=>$row["email"],
                 'nascimento'=>$row['nascimento'],'rua'=>$row["endereco_rua"], 
                 'numero'=>$row["endereco_numero"], 'cidade' =>$row["endereco_cidade"],
                 'estado'=>$row["endereco_estado"], 'bibliotecaria'=>$row["bibliotecaria"]

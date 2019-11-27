@@ -9,7 +9,7 @@
         if ( mysqli_num_rows($result) > 0){
             while ($row = $result->fetch_assoc()) {
                 array_push($trabalho, array('nome'=>$row["nome"], 'codigo'=>$row["codigo"],
-                'autor_1'=>$row["autor_1"],'autor_2'=>$row["autor_2"],'autor_3'=>$row["autor_3"]));
+                'autor_1'=>$row["autor_1"],'autor_2'=>$row["autor_2"],'autor_3'=>$row["autor_3"], 'status'=>$row['status']));
             }
         }
 

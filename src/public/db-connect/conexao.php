@@ -9,5 +9,4 @@
     $senha = 'p4ul1n0123';
     $conexao = mysqli_connect($servidor, $usuario, $senha, $banco) ;
     echo mysqli_error($conexao);
-    echo "deu";
 ?>

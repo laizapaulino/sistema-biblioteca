@@ -1,0 +1,1201 @@
+{
+  "id": "a03a1974-bcda-432d-b9c3-99a1418d7803",
+  "version": "2.0",
+  "name": "release-03",
+  "url": "http://localhost:8080/Sistema_Biblioteca/src/usuario/login.php",
+  "tests": [{
+    "id": "c8e65d18-09c2-4191-89d1-806a9cb350fc",
+    "name": "emprestimo",
+    "commands": [{
+      "id": "49176a8e-bb15-4b15-9490-f045780a9910",
+      "comment": "",
+      "command": "open",
+      "target": "/Sistema_Biblioteca/src/emprestimo/cadastra_emprestimo_livro.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e15c5b04-bcbe-44c5-a748-66a5479c7a44",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "817x709",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83e0e37f-68a9-4b4e-b2d9-a4211d3f18f0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=.btn-outline-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../public/logout.php')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d30056eb-bd21-45ae-a11a-6eba8d64dc6c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../usuario/login.php')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a10c5e3-4f0a-44b7-95c5-1266893b47d7",
+      "comment": "",
+      "command": "click",
+      "target": "name=cpf",
+      "targets": [
+        ["name=cpf", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cpf']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1825463-5087-453b-b9dd-ef8c5ce0be51",
+      "comment": "",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [
+        ["name=cpf", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cpf']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "1b8c4be5-2a06-41f6-a03d-6369d71869af",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "asas"
+    }, {
+      "id": "05c89e8b-6e7e-4024-9d05-026168dea88d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-md",
+      "targets": [
+        ["css=.btn-md", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e01fa53c-e151-49a7-9859-8db81a324030",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[5]", "xpath:attributes"],
+        ["xpath=//button[5]", "xpath:position"],
+        ["xpath=//button[contains(.,'Empréstimo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e489e58e-a1bb-4954-88a9-88954380d165",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Novo emprestimo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbc9c7fd-cf99-4f01-b125-5bc3d21af1a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cc037e8-a36d-4792-81e7-890f6d135966",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "026e387b-f7c3-4fec-a36e-bc1717e0f115",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "asas"
+    }, {
+      "id": "4a18bd2e-e7cb-4d28-be67-f5bc539378db",
+      "comment": "",
+      "command": "click",
+      "target": "id=valida",
+      "targets": [
+        ["id=valida", "id"],
+        ["css=#valida", "css:finder"],
+        ["xpath=//button[@id='valida']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f0be3f0-896e-4ae0-856e-cf42ab07741f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-control:nth-child(2)",
+      "targets": [
+        ["css=.custom-control:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdfca085-821c-4a93-8447-6a9a2f591386",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-control:nth-child(2) > .custom-control-label",
+      "targets": [
+        ["css=.custom-control:nth-child(2) > .custom-control-label", "css:finder"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Trabalho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "670e7e5e-93cc-48c4-a32b-3976968a9b57",
+      "comment": "",
+      "command": "click",
+      "target": "id=codigo_trabalho",
+      "targets": [
+        ["id=codigo_trabalho", "id"],
+        ["name=trabalho_cod", "name"],
+        ["css=#codigo_trabalho", "css:finder"],
+        ["xpath=//select[@id='codigo_trabalho']", "xpath:attributes"],
+        ["xpath=//div[@id='trab']/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[5]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d58037c5-3809-41fc-8a24-8412d6159b09",
+      "comment": "",
+      "command": "select",
+      "target": "id=codigo_trabalho",
+      "targets": [],
+      "value": "label=3665 - Estudo sobre espaço"
+    }, {
+      "id": "c688a1ca-001e-4e9a-86e0-be03cae857ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='3665']", "xpath:attributes"],
+        ["xpath=//select[@id='codigo_trabalho']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df0a0bc5-cf0d-4b2a-a04c-533329d95903",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='trab']/form/button", "xpath:idRelative"],
+        ["xpath=//div[5]/form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2930e406-17c7-4d08-8c25-f08a61d7ab5d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=.btn-outline-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../public/logout.php')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7033f3ca-7151-445f-b383-a5b8d485837f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../usuario/login.php')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ffe8283-3064-4636-9b7d-fe61811f0873",
+      "comment": "",
+      "command": "click",
+      "target": "name=cpf",
+      "targets": [
+        ["name=cpf", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cpf']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bc51d62-539c-472b-83ba-c1a3938187ec",
+      "comment": "",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [
+        ["name=cpf", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cpf']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "587536f6-7699-40e0-969c-ec0f77b2e21a",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "asas"
+    }, {
+      "id": "853b7f3d-8fd8-4304-9012-94c310c95b3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-md",
+      "targets": [
+        ["css=.btn-md", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92d548ed-43f5-4008-abd2-8c73bcb041f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-md:nth-child(2)",
+      "targets": [
+        ["css=.btn-md:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Reserva de livros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a9a6b82-c748-4da2-a32e-bd5ab2e64fcc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Menu",
+      "targets": [
+        ["linkText=Menu", "linkText"],
+        ["css=.col-md-4 > .text-white:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Menu')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../usuario/menu_leitor.php')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0e30dd1-32f8-4a02-8e13-540f1fdd841a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Empréstimo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2fa407d-acd5-49e5-91aa-4afce9277cc3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-md",
+      "targets": [
+        ["css=.btn-md", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Consultar emprestimos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1df39ec9-3446-4c5b-ae99-be1ffd741c3c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Renovar",
+      "targets": [
+        ["linkText=Renovar", "linkText"],
+        ["css=#emprestimo_livros > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Renovar')]", "xpath:link"],
+        ["xpath=//div[@id='emprestimo_livros']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../public/db-connect/emprestimo/atualiza-emprestimo.php?trabalho?3665?2019-12-04 00:00:00')]", "xpath:href"],
+        ["xpath=//div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Renovar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15c7adb6-9a1e-4ad3-908e-4d87b29816db",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../public/logout.php')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "868cf450-b4c9-4f8a-ac0a-7f0be3374162",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../usuario/login.php')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2baa603-c307-4a08-8a7b-fe85abcbfdff",
+      "comment": "",
+      "command": "click",
+      "target": "name=cpf",
+      "targets": [
+        ["name=cpf", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cpf']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ceb3b43-8f40-44b8-8c94-a41252d3e3d3",
+      "comment": "",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [
+        ["name=cpf", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cpf']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "7f81d2e1-ac4b-40ae-8fc9-af5ed3360d4c",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "asas"
+    }, {
+      "id": "0dfc4cab-4cc9-447f-8308-f6b3dffc900d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-md",
+      "targets": [
+        ["css=.btn-md", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08a1ea90-f1c2-4fa7-b1cd-ef25419ca045",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[5]", "xpath:attributes"],
+        ["xpath=//button[5]", "xpath:position"],
+        ["xpath=//button[contains(.,'Empréstimo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88cee0e7-80ff-48a8-aa56-9002ebb79bce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Devolução emprestimos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d97c4a79-86b7-4c39-82a2-2fb57f318431",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-control:nth-child(2) > .custom-control-label",
+      "targets": [
+        ["css=.custom-control:nth-child(2) > .custom-control-label", "css:finder"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Trabalho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43882438-659a-4121-a792-fb36d1ea3ded",
+      "comment": "",
+      "command": "click",
+      "target": "id=codigo_trabalho",
+      "targets": [
+        ["id=codigo_trabalho", "id"],
+        ["name=trabalho_cod", "name"],
+        ["css=#codigo_trabalho", "css:finder"],
+        ["xpath=//select[@id='codigo_trabalho']", "xpath:attributes"],
+        ["xpath=//div[@id='trab']/form/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b01acacb-6cb6-4ebb-b120-a90813f0868b",
+      "comment": "",
+      "command": "select",
+      "target": "id=codigo_trabalho",
+      "targets": [],
+      "value": "label=3665 - Estudo sobre espaço"
+    }, {
+      "id": "b9621ac8-81ae-4b4e-bf07-8023b3a9ff4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='3665']", "xpath:attributes"],
+        ["xpath=//select[@id='codigo_trabalho']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b07d161-a6e8-4055-9569-6d60a582f86b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='trab']/form/button", "xpath:idRelative"],
+        ["xpath=//div[4]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fb39d10-07ff-4ddb-89d7-31529d204a98",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=.btn-outline-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../public/logout.php')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e5c432aa-41e5-41dd-8e59-3dd69ee4c760",
+    "name": "valor-multa",
+    "commands": [{
+      "id": "8bc89077-a592-41c3-81c6-b9d1cb005b3c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Sistema_Biblioteca/src/usuario/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16994cec-0424-433e-9dd4-bddd69602805",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "576x709",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44296aa6-c8bf-4fc2-8de2-6c1da487b410",
+      "comment": "",
+      "command": "click",
+      "target": "name=cpf",
+      "targets": [
+        ["name=cpf", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cpf']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7a4db9e-30e8-4a55-b3a8-9b57c79ae8b0",
+      "comment": "",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [
+        ["name=cpf", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cpf']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "42dc1c21-4d82-479f-a048-551de7c16536",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "asas"
+    }, {
+      "id": "5539b652-570d-4a4d-b4a2-21ba839aa70b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-md",
+      "targets": [
+        ["css=.btn-md", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c9c4031-7e79-4a16-a09d-5064bc593d2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(6)",
+      "targets": [
+        ["css=.btn:nth-child(6)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[6]", "xpath:attributes"],
+        ["xpath=//button[6]", "xpath:position"],
+        ["xpath=//button[contains(.,'Multas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd1d08e1-9f5a-4898-a34a-d239d54f6e9c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar valor da multa",
+      "targets": [
+        ["linkText=Cadastrar valor da multa", "linkText"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastrar valor da multa')]", "xpath:link"],
+        ["xpath=//a[@type='submit']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, 'cadastra_multa.php')]", "xpath:href"],
+        ["xpath=//div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastrar valor da multa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d960a907-7276-4943-a672-d643b89b5dbb",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipo",
+      "targets": [
+        ["name=tipo", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='tipo']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b848822a-05bf-451f-a76b-46cb8f4f70e5",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipo",
+      "targets": [],
+      "value": "label=Livros"
+    }, {
+      "id": "9e9e2dac-666d-4956-945f-9766ab634601",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='Livros']", "xpath:attributes"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Livros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65cbe3da-e07a-495b-94c1-3a6db82442f7",
+      "comment": "",
+      "command": "click",
+      "target": "id=valor",
+      "targets": [
+        ["id=valor", "id"],
+        ["name=valor", "name"],
+        ["css=#valor", "css:finder"],
+        ["xpath=//input[@id='valor']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a64b912b-4f25-4f9b-98ac-b28d88aaf23f",
+      "comment": "",
+      "command": "type",
+      "target": "id=valor",
+      "targets": [
+        ["id=valor", "id"],
+        ["name=valor", "name"],
+        ["css=#valor", "css:finder"],
+        ["xpath=//input[@id='valor']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "2b4a8ad4-bc4f-4a47-8ec0-01a6cf1daa2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg",
+      "targets": [
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fceaab6-b12e-4287-bf58-bf18583747db",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar valor da multa",
+      "targets": [
+        ["linkText=Cadastrar valor da multa", "linkText"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastrar valor da multa')]", "xpath:link"],
+        ["xpath=//a[@type='submit']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, 'cadastra_multa.php')]", "xpath:href"],
+        ["xpath=//div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastrar valor da multa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "136b8b30-84f9-4828-bc11-f6652ccedcc8",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipo",
+      "targets": [
+        ["name=tipo", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='tipo']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83a51cce-414d-4a6d-b1c2-5754791dd669",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipo",
+      "targets": [],
+      "value": "label=Trabalho"
+    }, {
+      "id": "6a680705-1cf3-4c7b-a770-cd870beea7fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(3)",
+      "targets": [
+        ["css=option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='Trabalho']", "xpath:attributes"],
+        ["xpath=//option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'Trabalho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6cbec16-94c8-4a44-8363-252cd1ce9614",
+      "comment": "",
+      "command": "click",
+      "target": "id=valor",
+      "targets": [
+        ["id=valor", "id"],
+        ["name=valor", "name"],
+        ["css=#valor", "css:finder"],
+        ["xpath=//input[@id='valor']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dd9354b-43b9-4c35-ac56-f7716719ebed",
+      "comment": "",
+      "command": "type",
+      "target": "id=valor",
+      "targets": [
+        ["id=valor", "id"],
+        ["name=valor", "name"],
+        ["css=#valor", "css:finder"],
+        ["xpath=//input[@id='valor']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "efb69874-0a39-43d3-b8aa-f2b7cd241d03",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg",
+      "targets": [
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e996cee-d995-4b9f-a67e-344d88051ee5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Consultar valor da multas",
+      "targets": [
+        ["linkText=Consultar valor da multas", "linkText"],
+        ["css=.btn-md:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Consultar valor da multas')]", "xpath:link"],
+        ["xpath=(//a[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, 'consulta_valor_multa.php')]", "xpath:href"],
+        ["xpath=//div/div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Consultar valor da multas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b1a8447-bb56-4a06-a42f-b5012605bb88",
+      "comment": "",
+      "command": "click",
+      "target": "id=valor",
+      "targets": [
+        ["id=valor", "id"],
+        ["name=valor", "name"],
+        ["css=tr:nth-child(2) #valor", "css:finder"],
+        ["xpath=//input[@id='valor']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0074741c-fec8-4faf-a5c3-64b80ebfc783",
+      "comment": "",
+      "command": "type",
+      "target": "id=valor",
+      "targets": [
+        ["id=valor", "id"],
+        ["name=valor", "name"],
+        ["css=tr:nth-child(2) #valor", "css:finder"],
+        ["xpath=//input[@id='valor']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "a763d7a4-49f2-4357-a737-76329e94b3c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .btn",
+      "targets": [
+        ["css=tr:nth-child(2) .btn", "css:finder"],
+        ["xpath=//input[@value='Atualizar']", "xpath:attributes"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83c818ca-5247-4ac6-99b2-5d3568aabc8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) #valor",
+      "targets": [
+        ["css=tr:nth-child(4) #valor", "css:finder"],
+        ["xpath=(//input[@id='valor'])[2]", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d569a9f-daa0-4caf-ae99-ef96ccfa7812",
+      "comment": "",
+      "command": "type",
+      "target": "css=tr:nth-child(4) #valor",
+      "targets": [
+        ["css=tr:nth-child(4) #valor", "css:finder"],
+        ["xpath=(//input[@id='valor'])[2]", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "1d013db3-b362-4b97-bd20-cfca2a87a6cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .btn",
+      "targets": [
+        ["css=tr:nth-child(4) .btn", "css:finder"],
+        ["xpath=(//input[@value='Atualizar'])[2]", "xpath:attributes"],
+        ["xpath=//tr[2]/td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77482f5a-1d59-40d2-819c-8b71b41613a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Voltar",
+      "targets": [
+        ["linkText=Voltar", "linkText"],
+        ["css=.container > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Voltar')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8080/Sistema_Biblioteca/src/multa/consulta_valor_multa.php']", "xpath:href"],
+        ["xpath=//body/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "204fdcb6-121f-45b7-8728-9c7c91270da1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Menu",
+      "targets": [
+        ["linkText=Menu", "linkText"],
+        ["css=.col-md-4 > .text-white:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Menu')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../usuario/menu_bibliotecaria.php')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f34f03d2-647b-4508-82c9-54b49a87efa8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(6)",
+      "targets": [
+        ["css=.btn:nth-child(6)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[6]", "xpath:attributes"],
+        ["xpath=//button[6]", "xpath:position"],
+        ["xpath=//button[contains(.,'Multas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d64346fa-abb5-4c89-84a9-7a4e3d907f2b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Consultar valor da multas",
+      "targets": [
+        ["linkText=Consultar valor da multas", "linkText"],
+        ["css=.btn-md:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Consultar valor da multas')]", "xpath:link"],
+        ["xpath=(//a[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, 'consulta_valor_multa.php')]", "xpath:href"],
+        ["xpath=//div/div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Consultar valor da multas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dcaec3ef-0930-40ff-a796-91411dc26fd8",
+    "name": "reserva-trabalho",
+    "commands": [{
+      "id": "75350a2b-c33e-406a-aff8-b85b359d66e9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Sistema_Biblioteca/src/usuario/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56cc63c0-fa14-441c-a63b-089e41e13ce8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "576x709",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f6485e0-cb0a-4e68-bf67-084b7e73f274",
+      "comment": "",
+      "command": "click",
+      "target": "name=cpf",
+      "targets": [
+        ["name=cpf", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cpf']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb9e2c44-37d2-4184-bc9f-69ce43d724c9",
+      "comment": "",
+      "command": "type",
+      "target": "name=cpf",
+      "targets": [
+        ["name=cpf", "name"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='cpf']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "7538ae94-1b8e-40eb-9f6f-4a6611b1dc0e",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "asas"
+    }, {
+      "id": "03215446-39a3-47cd-b42b-c033c700674e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-md",
+      "targets": [
+        ["css=.btn-md", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6429fd2e-a623-46fd-abdc-645163a5a3e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-md:nth-child(2)",
+      "targets": [
+        ["css=.btn-md:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Reserva de livros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfb2e63b-880c-473f-9b68-15c236602e8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar reserva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07a64702-416a-4fb8-b66c-4f8caa45950f",
+      "comment": "",
+      "command": "click",
+      "target": "name=tipo",
+      "targets": [
+        ["name=tipo", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='tipo']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c62a3b9b-22be-4c6c-8ec2-b07f035624a7",
+      "comment": "",
+      "command": "select",
+      "target": "name=tipo",
+      "targets": [],
+      "value": "label=Trabalho"
+    }, {
+      "id": "9b3eb7f9-d3f5-4bbe-b05e-1088a1dd2ee0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(1) > option:nth-child(3)",
+      "targets": [
+        ["css=.form-control:nth-child(1) > option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='Trabalhos']", "xpath:attributes"],
+        ["xpath=//option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'Trabalho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76af42b6-55af-4a71-8851-86840de5b5ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=Trabalhos",
+      "targets": [
+        ["id=Trabalhos", "id"],
+        ["name=trabalho", "name"],
+        ["css=#Trabalhos", "css:finder"],
+        ["xpath=//select[@id='Trabalhos']", "xpath:attributes"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c17a3d9e-d99f-42d0-811b-055521f660ac",
+      "comment": "",
+      "command": "select",
+      "target": "id=Trabalhos",
+      "targets": [],
+      "value": "label=Estudo sobre moleculas"
+    }, {
+      "id": "b731ca6a-94ee-45b4-b951-f8f80bac785b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Trabalhos > option:nth-child(3)",
+      "targets": [
+        ["css=#Trabalhos > option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='3838']", "xpath:attributes"],
+        ["xpath=//select[@id='Trabalhos']/option[3]", "xpath:idRelative"],
+        ["xpath=//select[2]/option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'Estudo sobre moleculas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3a298bf-eaa1-4a04-bc8a-58eeb308d34f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg",
+      "targets": [
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6379e44-f03f-4855-9982-415184ce29f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-md:nth-child(2)",
+      "targets": [
+        ["css=.btn-md:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Consultar reservas feitas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2e21da7-7208-48ed-8223-b572f25de2c6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Renovar",
+      "targets": [
+        ["linkText=Renovar", "linkText"],
+        ["css=.text-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Renovar')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../public/db-connect/reserva_livro_trabalho/renovar-reserva.php?trabalho?3838?2019-12-04 00:00:00')]", "xpath:href"],
+        ["xpath=//div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Renovar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e61d69e-4095-4eb4-b275-381b5d72fb2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-9",
+      "targets": [
+        ["css=.col-md-9", "css:finder"],
+        ["xpath=//li/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11673a45-61f9-4bd2-b26b-ee4a1f352720",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-9",
+      "targets": [
+        ["css=.col-md-9", "css:finder"],
+        ["xpath=//li/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09832c82-acc5-4f41-85e0-412a8f982f05",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.col-md-9",
+      "targets": [
+        ["css=.col-md-9", "css:finder"],
+        ["xpath=//li/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1aac6993-5496-41d9-9881-543537139aac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Excluir",
+      "targets": [
+        ["linkText=Excluir", "linkText"],
+        ["css=.text-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Excluir')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../public/db-connect/reserva_livro_trabalho/excluir-reserva.php?trabalho?3838?2019-12-11 00:00:00')]", "xpath:href"],
+        ["xpath=//div/div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Excluir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b490b05a-0598-4f53-8586-2e633fbc6fc0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=.btn-outline-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '../public/logout.php')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d372e189-e6ce-40c2-8e13-8de362d240a9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c8e65d18-09c2-4191-89d1-806a9cb350fc"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

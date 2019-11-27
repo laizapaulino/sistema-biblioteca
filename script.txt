@@ -45,4 +45,19 @@ CREATE TABLE trabalho(
     
 );
 
+CREATE TABLE emprestimo_livro(
+	codigo int PRIMARY KEY,
+    usuario varchar(14) UNIQUE,
+    data_devolucao timestamp,
+    FOREIGN KEY (usuario) REFERENCES usuario(cpf),
+	FOREIGN KEY (codigo) REFERENCES exemplar(codigo_id) ON DELETE CASCADE
+);
 
+CREATE TABLE emprestimo_trabalho(
+	codigo int PRIMARY KEY,
+    usuario varchar(14) UNIQUE,
+    data_devolucao timestamp,
+    FOREIGN KEY (usuario) REFERENCES usuario(cpf),
+	FOREIGN KEY (codigo) REFERENCES trabalho(codigo) ON DELETE CASCADE
+    
+);

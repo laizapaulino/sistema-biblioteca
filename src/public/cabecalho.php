@@ -7,7 +7,16 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <style>
+      @font-face{
+        font-family:'Glyphicons Halflings';
+        src:url(../fonts/glyphicons-halflings-regular.eot);
+        src:url(../fonts/glyphicons-halflings-regular.woff2);
+        src:url(../fonts/glyphicons-halflings-regular.woff);
+      }
+    </style>
   </head>
 
   <body>
@@ -26,7 +35,7 @@
           if($_SESSION["tipo"] == "bibliotecaria"){?>
             <a href="../usuario/menu_bibliotecaria.php" class="text-white">Menu</a> |
           <?}else{?>
-            <a href="../usuario/menu_bibliotecaria.php"  class="text-white">Menu</a> |
+            <a href="../usuario/menu_leitor.php"  class="text-white">Menu</a> |
           <?} 
         }?>
         <a href="../public/pagina_inicial.php"  class=" text-white">Pesquisar</a>

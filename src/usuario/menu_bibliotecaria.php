@@ -26,7 +26,7 @@
                 <button class="btn btn-md btn-block  btn-outline-info" type="submit" onclick="window.location.href='../livros/menu_exemplar.php'">Exemplar</button>
                 <button class="btn btn-md btn-block  btn-outline-info" type="submit" onclick="window.location.href='menu_leitor2.php'">Leitor</button>
                 <button class="btn btn-md btn-block  btn-outline-info" type="submit" onclick="window.location.href='../emprestimo/menu_emprestimo.php'">Empréstimo</button>
-                <button class="btn btn-md btn-block  btn-outline-primary" type="submit"  onclick="#">Multas</button>
+                <button class="btn btn-md btn-block  btn-outline-primary" type="submit"  onclick="window.location.href='../multa/menu_multa.php'">Multas</button>
                 <button class="btn btn-md btn-block  btn-outline-primary" type="submit"  onclick="#">Computadores</button>
               <?if (isset($_SESSION["admin"])) {?>
               <hr>
